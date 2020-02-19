@@ -1,4 +1,4 @@
-package org.eclipse.paho.mqttv5.common;
+package br.com.anteros.mqttv5.common;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
@@ -8,7 +8,7 @@ import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import org.eclipse.paho.mqttv5.common.packet.MqttDataTypes;
+import br.com.anteros.mqttv5.common.packet.MqttDataTypes;
 import org.junit.Assert;
 import org.junit.Test;
 

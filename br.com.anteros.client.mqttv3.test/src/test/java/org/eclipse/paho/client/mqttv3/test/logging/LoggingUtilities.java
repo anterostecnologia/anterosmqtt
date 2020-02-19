@@ -12,7 +12,7 @@
  *
  *******************************************************************************/
 
-package org.eclipse.paho.client.mqttv3.test.logging;
+package br.com.anteros.client.mqttv3.test.logging;
 
 import java.io.InputStream;
 import java.io.PrintStream;

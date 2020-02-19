@@ -15,7 +15,7 @@
  *   James Sutton - IBM (Fixing Copyright header and adding getSocketFactory)
  */
 
-package org.eclipse.paho.client.mqttv3.test;
+package br.com.anteros.client.mqttv3.test;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -32,11 +32,11 @@ import javax.net.ssl.SSLSocket;
 import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManagerFactory;
 
-import org.eclipse.paho.client.mqttv3.MqttClient;
-import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
-import org.eclipse.paho.client.mqttv3.test.logging.LoggingUtilities;
-import org.eclipse.paho.client.mqttv3.test.properties.TestProperties;
-import org.eclipse.paho.client.mqttv3.test.utilities.Utility;
+import br.com.anteros.client.mqttv3.MqttClient;
+import br.com.anteros.client.mqttv3.MqttConnectOptions;
+import br.com.anteros.client.mqttv3.test.logging.LoggingUtilities;
+import br.com.anteros.client.mqttv3.test.properties.TestProperties;
+import br.com.anteros.client.mqttv3.test.utilities.Utility;
 import org.junit.BeforeClass;
 import org.junit.Test;
 

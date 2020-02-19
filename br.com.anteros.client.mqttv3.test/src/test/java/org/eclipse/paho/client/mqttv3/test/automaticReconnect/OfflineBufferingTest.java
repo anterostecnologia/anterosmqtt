@@ -12,7 +12,7 @@
  *
  *******************************************************************************/
 
-package org.eclipse.paho.client.mqttv3.test.automaticReconnect;
+package br.com.anteros.client.mqttv3.test.automaticReconnect;
 
 import java.net.URI;
 import java.util.Collections;
@@ -22,22 +22,22 @@ import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.eclipse.paho.client.mqttv3.DisconnectedBufferOptions;
-import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
-import org.eclipse.paho.client.mqttv3.IMqttToken;
-import org.eclipse.paho.client.mqttv3.MqttAsyncClient;
-import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
-import org.eclipse.paho.client.mqttv3.MqttException;
-import org.eclipse.paho.client.mqttv3.MqttMessage;
-import org.eclipse.paho.client.mqttv3.internal.wire.MqttPublish;
-import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
-import org.eclipse.paho.client.mqttv3.test.logging.LoggingUtilities;
-import org.eclipse.paho.client.mqttv3.test.properties.TestProperties;
-import org.eclipse.paho.client.mqttv3.test.utilities.ConnectionManipulationProxyServer;
-import org.eclipse.paho.client.mqttv3.test.utilities.MqttV3Receiver;
-import org.eclipse.paho.client.mqttv3.test.utilities.TestMemoryPersistence;
-import org.eclipse.paho.client.mqttv3.test.utilities.Utility;
-import org.eclipse.paho.client.mqttv3.util.Debug;
+import br.com.anteros.client.mqttv3.DisconnectedBufferOptions;
+import br.com.anteros.client.mqttv3.IMqttDeliveryToken;
+import br.com.anteros.client.mqttv3.IMqttToken;
+import br.com.anteros.client.mqttv3.MqttAsyncClient;
+import br.com.anteros.client.mqttv3.MqttConnectOptions;
+import br.com.anteros.client.mqttv3.MqttException;
+import br.com.anteros.client.mqttv3.MqttMessage;
+import br.com.anteros.client.mqttv3.internal.wire.MqttPublish;
+import br.com.anteros.client.mqttv3.persist.MemoryPersistence;
+import br.com.anteros.client.mqttv3.test.logging.LoggingUtilities;
+import br.com.anteros.client.mqttv3.test.properties.TestProperties;
+import br.com.anteros.client.mqttv3.test.utilities.ConnectionManipulationProxyServer;
+import br.com.anteros.client.mqttv3.test.utilities.MqttV3Receiver;
+import br.com.anteros.client.mqttv3.test.utilities.TestMemoryPersistence;
+import br.com.anteros.client.mqttv3.test.utilities.Utility;
+import br.com.anteros.client.mqttv3.util.Debug;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.BeforeClass;

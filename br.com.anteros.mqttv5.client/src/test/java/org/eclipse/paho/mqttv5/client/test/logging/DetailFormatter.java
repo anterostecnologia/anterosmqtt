@@ -12,7 +12,7 @@
  *
  *******************************************************************************/
 
-package org.eclipse.paho.mqttv5.client.test.logging;
+package br.com.anteros.mqttv5.client.test.logging;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -21,7 +21,7 @@ import java.util.Date;
 import java.util.logging.Formatter;
 import java.util.logging.LogRecord;
 
-import org.eclipse.paho.mqttv5.client.test.utilities.StringUtilities;
+import br.com.anteros.mqttv5.client.test.utilities.StringUtilities;
 
 /**
  * A log formatter which formats most of the LogRecord fields.

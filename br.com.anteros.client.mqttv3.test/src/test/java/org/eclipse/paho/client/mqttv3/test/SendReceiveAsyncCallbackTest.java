@@ -12,7 +12,7 @@
  *
  *******************************************************************************/
 
-package org.eclipse.paho.client.mqttv3.test;
+package br.com.anteros.client.mqttv3.test;
 
 import java.net.URI;
 import java.util.ArrayList;
@@ -22,17 +22,17 @@ import java.util.UUID;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.eclipse.paho.client.mqttv3.IMqttAsyncClient;
-import org.eclipse.paho.client.mqttv3.IMqttActionListener;
-import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
-import org.eclipse.paho.client.mqttv3.IMqttMessageListener;
-import org.eclipse.paho.client.mqttv3.IMqttToken;
-import org.eclipse.paho.client.mqttv3.MqttCallback;
-import org.eclipse.paho.client.mqttv3.MqttMessage;
-import org.eclipse.paho.client.mqttv3.test.client.MqttClientFactoryPaho;
-import org.eclipse.paho.client.mqttv3.test.logging.LoggingUtilities;
-import org.eclipse.paho.client.mqttv3.test.properties.TestProperties;
-import org.eclipse.paho.client.mqttv3.test.utilities.Utility;
+import br.com.anteros.client.mqttv3.IMqttAsyncClient;
+import br.com.anteros.client.mqttv3.IMqttActionListener;
+import br.com.anteros.client.mqttv3.IMqttDeliveryToken;
+import br.com.anteros.client.mqttv3.IMqttMessageListener;
+import br.com.anteros.client.mqttv3.IMqttToken;
+import br.com.anteros.client.mqttv3.MqttCallback;
+import br.com.anteros.client.mqttv3.MqttMessage;
+import br.com.anteros.client.mqttv3.test.client.MqttClientFactoryPaho;
+import br.com.anteros.client.mqttv3.test.logging.LoggingUtilities;
+import br.com.anteros.client.mqttv3.test.properties.TestProperties;
+import br.com.anteros.client.mqttv3.test.utilities.Utility;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;

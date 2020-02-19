@@ -1,4 +1,4 @@
-package org.eclipse.paho.client.mqttv3.test.utilities;
+package br.com.anteros.client.mqttv3.test.utilities;
 
 import java.io.IOException;
 import java.io.InputStream;

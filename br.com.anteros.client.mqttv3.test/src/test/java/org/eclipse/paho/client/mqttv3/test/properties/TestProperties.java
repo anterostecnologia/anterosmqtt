@@ -12,7 +12,7 @@
  *
  *******************************************************************************/
 
-package org.eclipse.paho.client.mqttv3.test.properties;
+package br.com.anteros.client.mqttv3.test.properties;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -31,15 +31,15 @@ import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.eclipse.paho.client.mqttv3.test.client.MqttClientFactoryPaho;
-import org.eclipse.paho.client.mqttv3.test.utilities.Utility;
+import br.com.anteros.client.mqttv3.test.client.MqttClientFactoryPaho;
+import br.com.anteros.client.mqttv3.test.utilities.Utility;
 
 /**
   * Contains the classes and utilities used to configure the MQTT testcases. 
   *
   * <p>
   * The way in which a test is run is controlled by properties which are typically supplied in property file.  
-  * A {@link org.eclipse.paho.client.mqttv3.test.properties.TestProperties TestProperties} class provides default values and getter methods 
+  * A {@link br.com.anteros.client.mqttv3.test.properties.TestProperties TestProperties} class provides default values and getter methods 
   * to supported properties. When the properties have been loaded, the framework logs the non-default values 
   * 
   * <p>
@@ -96,7 +96,7 @@ public class TestProperties {
    * <p>
    * The following client factories have been defined 
    *     <ul>
-   *     <li>{@link org.eclipse.paho.client.mqttv3.test.client.pahoJava.MqttClientFactoryPahoJava PahaJava}  (This is the default)
+   *     <li>{@link br.com.anteros.client.mqttv3.test.client.pahoJava.MqttClientFactoryPahoJava PahaJava}  (This is the default)
    *     </ul>
    */
   static public final String KEY_CLIENT_TYPE = "CLIENT_TYPE";
@@ -135,9 +135,9 @@ public class TestProperties {
 
     // Make sure all the property classes we know about get initialised
     List<String> list = new ArrayList<String>();
-    list.add("org.eclipse.paho.client.mqttv3.test.properties.ClientTestProperties");
-    list.add("org.eclipse.paho.client.mqttv3.test.properties.MqTestProperties");
-    list.add("org.eclipse.paho.client.mqttv3.test.properties.ImsTestProperties");
+    list.add("br.com.anteros.client.mqttv3.test.properties.ClientTestProperties");
+    list.add("br.com.anteros.client.mqttv3.test.properties.MqTestProperties");
+    list.add("br.com.anteros.client.mqttv3.test.properties.ImsTestProperties");
 
     for (String name : list) {
       try {

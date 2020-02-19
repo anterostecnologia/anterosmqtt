@@ -13,14 +13,14 @@
  * Contributors:
  *    Dave Locke - initial API and implementation and/or initial documentation
  */
-package org.eclipse.paho.mqttv5.client.test.utilities;
+package br.com.anteros.mqttv5.client.test.utilities;
 
 import java.util.Enumeration;
 import java.util.Hashtable;
 
-import org.eclipse.paho.mqttv5.client.MqttClientPersistence;
-import org.eclipse.paho.mqttv5.common.MqttPersistable;
-import org.eclipse.paho.mqttv5.common.MqttPersistenceException;
+import br.com.anteros.mqttv5.client.MqttClientPersistence;
+import br.com.anteros.mqttv5.common.MqttPersistable;
+import br.com.anteros.mqttv5.common.MqttPersistenceException;
 
 /**
  * Persistence that uses memory
@@ -38,28 +38,28 @@ public class TestMemoryPersistence implements MqttClientPersistence {
 	private String serverURI;
 	
 	/* (non-Javadoc)
-	 * @see org.eclipse.paho.client.mqttv3.MqttClientPersistence#close()
+	 * @see br.com.anteros.client.mqttv3.MqttClientPersistence#close()
 	 */
 	public void close() throws MqttPersistenceException {
 		//data.clear();
 	}
 
 	/* (non-Javadoc)
-	 * @see org.eclipse.paho.client.mqttv3.MqttClientPersistence#keys()
+	 * @see br.com.anteros.client.mqttv3.MqttClientPersistence#keys()
 	 */
 	public Enumeration<String> keys() throws MqttPersistenceException {
 		return data.keys();
 	}
 
 	/* (non-Javadoc)
-	 * @see org.eclipse.paho.client.mqttv3.MqttClientPersistence#get(java.lang.String)
+	 * @see br.com.anteros.client.mqttv3.MqttClientPersistence#get(java.lang.String)
 	 */
 	public MqttPersistable get(String key) throws MqttPersistenceException {
 		return (MqttPersistable)data.get(key);
 	}
 
 	/* (non-Javadoc)
-	 * @see org.eclipse.paho.client.mqttv3.MqttClientPersistence#open(java.lang.String, java.lang.String)
+	 * @see br.com.anteros.client.mqttv3.MqttClientPersistence#open(java.lang.String, java.lang.String)
 	 */
 	public void open(String clientId, String serverURI) throws MqttPersistenceException {
 		this.clientId = clientId;
@@ -70,28 +70,28 @@ public class TestMemoryPersistence implements MqttClientPersistence {
 	}
 
 	/* (non-Javadoc)
-	 * @see org.eclipse.paho.client.mqttv3.MqttClientPersistence#put(java.lang.String, org.eclipse.paho.client.mqttv3.MqttPersistable)
+	 * @see br.com.anteros.client.mqttv3.MqttClientPersistence#put(java.lang.String, br.com.anteros.client.mqttv3.MqttPersistable)
 	 */
 	public void put(String key, MqttPersistable persistable) throws MqttPersistenceException {
 		data.put(key, persistable);
 	}
 
 	/* (non-Javadoc)
-	 * @see org.eclipse.paho.client.mqttv3.MqttClientPersistence#remove(java.lang.String)
+	 * @see br.com.anteros.client.mqttv3.MqttClientPersistence#remove(java.lang.String)
 	 */
 	public void remove(String key) throws MqttPersistenceException {
 		data.remove(key);
 	}
 
 	/* (non-Javadoc)
-	 * @see org.eclipse.paho.client.mqttv3.MqttClientPersistence#clear()
+	 * @see br.com.anteros.client.mqttv3.MqttClientPersistence#clear()
 	 */
 	public void clear() throws MqttPersistenceException {
 		data.clear();
 	}
 
 	/* (non-Javadoc)
-	 * @see org.eclipse.paho.client.mqttv3.MqttClientPersistence#containsKey(java.lang.String)
+	 * @see br.com.anteros.client.mqttv3.MqttClientPersistence#containsKey(java.lang.String)
 	 */
 	public boolean containsKey(String key) throws MqttPersistenceException {
 		return data.containsKey(key);

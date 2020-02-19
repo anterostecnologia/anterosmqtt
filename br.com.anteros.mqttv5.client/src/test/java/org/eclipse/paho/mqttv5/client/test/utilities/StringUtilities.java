@@ -12,7 +12,7 @@
  *
  *******************************************************************************/
 
-package org.eclipse.paho.mqttv5.client.test.utilities;
+package br.com.anteros.mqttv5.client.test.utilities;
 
 import java.text.MessageFormat;
 

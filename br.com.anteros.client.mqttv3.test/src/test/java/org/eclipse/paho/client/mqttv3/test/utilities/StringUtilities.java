@@ -12,7 +12,7 @@
  *
  *******************************************************************************/
 
-package org.eclipse.paho.client.mqttv3.test.utilities;
+package br.com.anteros.client.mqttv3.test.utilities;
 
 import java.text.MessageFormat;
 import java.util.logging.Logger;

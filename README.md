@@ -46,8 +46,8 @@ The latest release version is ```1.2.2``` and the current snapshot version is ``
 ...
 <dependencies>
     <dependency>
-        <groupId>org.eclipse.paho</groupId>
-        <artifactId>org.eclipse.paho.client.mqttv3</artifactId>
+        <groupId>br.com.anteros</groupId>
+        <artifactId>br.com.anteros.client.mqttv3</artifactId>
         <version>%VERSION%</version>
     </dependency>
 </dependencies>
@@ -63,7 +63,7 @@ There are two active branches on the Paho Java git repository, ```master``` whic
 
 To then build the library run the following maven command: ```mvn package -DskipTests```
 
-This will build the client library without running the tests. The jars for the library, source and javadoc can be found in the ```org.eclipse.paho.client.mqttv3/target``` directory.
+This will build the client library without running the tests. The jars for the library, source and javadoc can be found in the ```br.com.anteros.client.mqttv3/target``` directory.
 
 ## Documentation
 Reference documentation is online at: [http://www.eclipse.org/paho/files/javadoc/index.html](http://www.eclipse.org/paho/files/javadoc/index.html)
@@ -72,15 +72,15 @@ Log and Debug in the Java Client: [https://wiki.eclipse.org/Paho/Log_and_Debug_i
 
 ## Getting Started
 
-The included code below is a very basic sample that connects to a server and publishes a message using the MqttClient synchronous API. More extensive samples demonstrating the use of the Asynchronous API can be found in the ```org.eclipse.paho.sample.mqttv3app``` directory of the source.
+The included code below is a very basic sample that connects to a server and publishes a message using the MqttClient synchronous API. More extensive samples demonstrating the use of the Asynchronous API can be found in the ```br.com.anteros.sample.mqttv3app``` directory of the source.
 
 
 ```
-import org.eclipse.paho.client.mqttv3.MqttClient;
-import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
-import org.eclipse.paho.client.mqttv3.MqttException;
-import org.eclipse.paho.client.mqttv3.MqttMessage;
-import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
+import br.com.anteros.client.mqttv3.MqttClient;
+import br.com.anteros.client.mqttv3.MqttConnectOptions;
+import br.com.anteros.client.mqttv3.MqttException;
+import br.com.anteros.client.mqttv3.MqttMessage;
+import br.com.anteros.client.mqttv3.persist.MemoryPersistence;
 
 public class MqttPublishSample {
 

@@ -1,13 +1,13 @@
-package org.eclipse.paho.mqttv5.client.test.utilities;
+package br.com.anteros.mqttv5.client.test.utilities;
 
 import java.util.logging.Logger;
 
-import org.eclipse.paho.mqttv5.client.IMqttToken;
-import org.eclipse.paho.mqttv5.client.MqttAsyncClient;
-import org.eclipse.paho.mqttv5.client.MqttCallback;
-import org.eclipse.paho.mqttv5.client.MqttConnectionOptions;
-import org.eclipse.paho.mqttv5.client.test.SubscribeTests;
-import org.eclipse.paho.mqttv5.common.MqttException;
+import br.com.anteros.mqttv5.client.IMqttToken;
+import br.com.anteros.mqttv5.client.MqttAsyncClient;
+import br.com.anteros.mqttv5.client.MqttCallback;
+import br.com.anteros.mqttv5.client.MqttConnectionOptions;
+import br.com.anteros.mqttv5.client.test.SubscribeTests;
+import br.com.anteros.mqttv5.common.MqttException;
 import org.junit.Assert;
 
 public class TestClientUtilities {

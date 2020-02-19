@@ -1,4 +1,4 @@
-package org.eclipse.paho.client.mqttv3.test;
+package br.com.anteros.client.mqttv3.test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
@@ -8,11 +8,11 @@ import static org.junit.Assert.fail;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
-import org.eclipse.paho.client.mqttv3.MqttException;
-import org.eclipse.paho.client.mqttv3.internal.NetworkModule;
-import org.eclipse.paho.client.mqttv3.internal.NetworkModuleService;
-import org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule;
+import br.com.anteros.client.mqttv3.MqttConnectOptions;
+import br.com.anteros.client.mqttv3.MqttException;
+import br.com.anteros.client.mqttv3.internal.NetworkModule;
+import br.com.anteros.client.mqttv3.internal.NetworkModuleService;
+import br.com.anteros.client.mqttv3.internal.TCPNetworkModule;
 import org.junit.Test;
 
 public class NetworkModuleServiceTest {

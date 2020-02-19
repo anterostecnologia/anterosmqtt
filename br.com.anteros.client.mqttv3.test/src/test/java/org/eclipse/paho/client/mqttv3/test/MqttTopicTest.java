@@ -11,13 +11,13 @@
  *
  *******************************************************************************/
 
-package org.eclipse.paho.client.mqttv3.test;
+package br.com.anteros.client.mqttv3.test;
 
 import java.util.logging.Logger;
 
-import org.eclipse.paho.client.mqttv3.MqttTopic;
-import org.eclipse.paho.client.mqttv3.test.logging.LoggingUtilities;
-import org.eclipse.paho.client.mqttv3.test.utilities.Utility;
+import br.com.anteros.client.mqttv3.MqttTopic;
+import br.com.anteros.client.mqttv3.test.logging.LoggingUtilities;
+import br.com.anteros.client.mqttv3.test.utilities.Utility;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;

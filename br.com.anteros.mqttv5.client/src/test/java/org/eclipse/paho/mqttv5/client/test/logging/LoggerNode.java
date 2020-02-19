@@ -12,7 +12,7 @@
  *
  *******************************************************************************/
 
-package org.eclipse.paho.mqttv5.client.test.logging;
+package br.com.anteros.mqttv5.client.test.logging;
 
 import java.util.Collection;
 import java.util.HashSet;

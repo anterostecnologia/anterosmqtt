@@ -11,10 +11,10 @@ The v5 client is build on the same foundations as the v3 client is, however it i
 ## Plan
 
 #### Project Modules:
-* `org.eclipse.paho.mqttv5.client` - A full client similar to the existing mqttv3 client
-* `org.eclipse.paho.mqttv5.common` - A common library that could be used by both a client and server, contains a packet implementation that encodes and decodes all MQTTv5 packet types.
-* `org.eclipse.paho.mqttv5.testClient` - A number of examples written that show off features of the v5 client.
-* `org.eclipse.paho.mqttv5.server` - Not yet implemented. There has been some interest in the community for a Java MQTTv5 server using the vert.x framework. Contributions are very welcome.
+* `br.com.anteros.mqttv5.client` - A full client similar to the existing mqttv3 client
+* `br.com.anteros.mqttv5.common` - A common library that could be used by both a client and server, contains a packet implementation that encodes and decodes all MQTTv5 packet types.
+* `br.com.anteros.mqttv5.testClient` - A number of examples written that show off features of the v5 client.
+* `br.com.anteros.mqttv5.server` - Not yet implemented. There has been some interest in the community for a Java MQTTv5 server using the vert.x framework. Contributions are very welcome.
 
 ## Help, something doesn't work! / This looks terrible! / What about x!
 

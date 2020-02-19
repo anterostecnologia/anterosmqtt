@@ -14,14 +14,14 @@
  * 	  Dave Locke   - Original MQTTv3 implementation
  *    James Sutton - Initial MQTTv5 implementation
  */
-package org.eclipse.paho.mqttv5.common.packet;
+package br.com.anteros.mqttv5.common.packet;
 
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import org.eclipse.paho.mqttv5.common.MqttException;
+import br.com.anteros.mqttv5.common.MqttException;
 import org.junit.Assert;
 import org.junit.Test;
 

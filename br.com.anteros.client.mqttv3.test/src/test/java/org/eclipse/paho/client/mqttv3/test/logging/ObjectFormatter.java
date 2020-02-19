@@ -12,13 +12,13 @@
  *
  *******************************************************************************/
 
-package org.eclipse.paho.client.mqttv3.test.logging;
+package br.com.anteros.client.mqttv3.test.logging;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.lang.reflect.Array;
 
-import org.eclipse.paho.client.mqttv3.test.utilities.StringUtilities;
+import br.com.anteros.client.mqttv3.test.utilities.StringUtilities;
 import org.xml.sax.Attributes;
 
 /**

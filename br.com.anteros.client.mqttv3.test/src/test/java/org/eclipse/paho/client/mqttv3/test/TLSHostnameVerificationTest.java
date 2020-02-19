@@ -14,16 +14,16 @@
  *   James Sutton - IBM Adding HTTPS Hostname verification tests.
  */
 
-package org.eclipse.paho.client.mqttv3.test;
+package br.com.anteros.client.mqttv3.test;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.net.ssl.SSLHandshakeException;
-import org.eclipse.paho.client.mqttv3.MqttClient;
-import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
-import org.eclipse.paho.client.mqttv3.test.logging.LoggingUtilities;
-import org.eclipse.paho.client.mqttv3.test.properties.TestProperties;
-import org.eclipse.paho.client.mqttv3.test.utilities.Utility;
+import br.com.anteros.client.mqttv3.MqttClient;
+import br.com.anteros.client.mqttv3.MqttConnectOptions;
+import br.com.anteros.client.mqttv3.test.logging.LoggingUtilities;
+import br.com.anteros.client.mqttv3.test.properties.TestProperties;
+import br.com.anteros.client.mqttv3.test.utilities.Utility;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;

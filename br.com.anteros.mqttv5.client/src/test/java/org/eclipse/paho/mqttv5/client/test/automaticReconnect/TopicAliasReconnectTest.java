@@ -1,21 +1,21 @@
-package org.eclipse.paho.mqttv5.client.test.automaticReconnect;
+package br.com.anteros.mqttv5.client.test.automaticReconnect;
 
 import java.net.URI;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.eclipse.paho.mqttv5.client.IMqttDeliveryToken;
-import org.eclipse.paho.mqttv5.client.IMqttToken;
-import org.eclipse.paho.mqttv5.client.MqttAsyncClient;
-import org.eclipse.paho.mqttv5.client.MqttConnectionOptions;
-import org.eclipse.paho.mqttv5.client.persist.MemoryPersistence;
-import org.eclipse.paho.mqttv5.client.test.logging.LoggingUtilities;
-import org.eclipse.paho.mqttv5.client.test.properties.TestProperties;
-import org.eclipse.paho.mqttv5.client.test.utilities.ConnectionManipulationProxyServer;
-import org.eclipse.paho.mqttv5.client.test.utilities.Utility;
-import org.eclipse.paho.mqttv5.common.MqttException;
-import org.eclipse.paho.mqttv5.common.MqttMessage;
-import org.eclipse.paho.mqttv5.common.packet.MqttProperties;
+import br.com.anteros.mqttv5.client.IMqttDeliveryToken;
+import br.com.anteros.mqttv5.client.IMqttToken;
+import br.com.anteros.mqttv5.client.MqttAsyncClient;
+import br.com.anteros.mqttv5.client.MqttConnectionOptions;
+import br.com.anteros.mqttv5.client.persist.MemoryPersistence;
+import br.com.anteros.mqttv5.client.test.logging.LoggingUtilities;
+import br.com.anteros.mqttv5.client.test.properties.TestProperties;
+import br.com.anteros.mqttv5.client.test.utilities.ConnectionManipulationProxyServer;
+import br.com.anteros.mqttv5.client.test.utilities.Utility;
+import br.com.anteros.mqttv5.common.MqttException;
+import br.com.anteros.mqttv5.common.MqttMessage;
+import br.com.anteros.mqttv5.common.packet.MqttProperties;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;

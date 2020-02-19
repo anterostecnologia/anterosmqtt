@@ -28,19 +28,20 @@
 	</description>
 
 	<organization>
-		<name>Eclipse Paho</name>
+		<name>Anteros Tecnologia</name>
 		<url>http://www.eclipse.org/paho</url>
 	</organization>
 
 	<developers>
 		<developer>
-			<id>icraggs</id>
-			<name>Ian Craggs</name>
-			<email>icraggs@uk.ibm.com</email>
-			<organization>IBM</organization>
-			<organizationUrl>http://www.ibm.com</organizationUrl>
+			<id>edson</id>
+			<name>Edson Martins</name>
+			<email>edsonmartins2005@gmail.com</email>
+			<organization>Anteros Tecnologia</organization>
+			<organizationUrl>http://www.anteros.com.br</organizationUrl>
 			<roles>
-				<role>Developer</role>
+				<role>architect</role>
+				<role>developer</role>
 			</roles>
 		</developer>
 	</developers>
@@ -52,23 +53,18 @@
 	</licenses>
 
 	<scm>
-		<url>http://git.eclipse.org/c/paho/org.eclipse.paho.mqtt.java.git</url>
-		<connection>scm:git://git.eclipse.org/gitroot/paho/org.eclipse.paho.mqtt.java.git</connection>
-	  <tag>java-parent-1.2.2</tag>
-  </scm>
+		<connection>scm:git:git@github.com:anterostecnologia/anterosmqtt.git</connection>
+		<developerConnection>scm:git:git@github.com:anterostecnologia/anterosmqtt.git</developerConnection>
+		<url>https://github.com/anterostecnologia/anterosmqtt</url>
+	</scm>
 
 	<distributionManagement>
-		<repository>
-			<id>repo.eclipse.org</id>
-			<name>Paho Repository - Releases</name>
-			<url>https://repo.eclipse.org/content/repositories/paho-releases/</url>
-		</repository>
-		<snapshotRepository>
-			<id>repo.eclipse.org</id>
-			<name>Paho Repository - Snapshots</name>
-			<url>https://repo.eclipse.org/content/repositories/paho-snapshots/</url>
-		</snapshotRepository>
-	</distributionManagement>
+				<repository>
+					<id>nexus-releases</id>
+					<name>Nexus Release Repository</name>
+					<url>http://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+				</repository>
+			</distributionManagement>
 
 	<pluginRepositories>
 		<pluginRepository>
@@ -232,15 +228,16 @@
 				<version>1.6.5</version>
 				<extensions>true</extensions>
 				<configuration>
-					<serverId>ossrh</serverId>
+					<serverId>nexus-releases</serverId>
 					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
-					<autoReleaseAfterClose>false</autoReleaseAfterClose>
+					<autoReleaseAfterClose>true</autoReleaseAfterClose>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
 
 	<profiles>
+	
 		<profile>
 			<id>eclipse-sign</id>
 			<build>
@@ -265,7 +262,7 @@
 							</execution>
 						</executions>
 					</plugin>
-					<plugin>
+					<!-- <plugin>
 						<groupId>org.eclipse.cbi.maven.plugins</groupId>
 						<artifactId>eclipse-jarsigner-plugin</artifactId>
 						<executions>
@@ -277,7 +274,7 @@
 								<phase>verify</phase>
 							</execution>
 						</executions>
-					</plugin>
+					</plugin> -->
 					<plugin>
 						<groupId>org.eclipse.tycho.extras</groupId>
 						<artifactId>tycho-pack200b-plugin</artifactId>
@@ -291,7 +288,7 @@
 							</execution>
 						</executions>
 					</plugin>
-					<plugin>
+					<!-- <plugin>
 						<groupId>org.eclipse.tycho</groupId>
 						<artifactId>tycho-p2-plugin</artifactId>
 						<executions>
@@ -306,7 +303,7 @@
 						<configuration>
 							<defaultP2Metadata>false</defaultP2Metadata>
 						</configuration>
-					</plugin>
+					</plugin> -->
 				</plugins>
 			</build>
 		</profile>
@@ -338,6 +335,7 @@
 				</plugins>
 			</build>
 		</profile>
+		
 	</profiles>
 	<modules>
 		<module>br.com.anteros.client.mqttv3</module>

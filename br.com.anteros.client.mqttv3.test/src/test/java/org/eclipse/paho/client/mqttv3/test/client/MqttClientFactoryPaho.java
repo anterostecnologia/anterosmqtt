@@ -12,13 +12,13 @@
  *
  *******************************************************************************/
 
-package org.eclipse.paho.client.mqttv3.test.client;
+package br.com.anteros.client.mqttv3.test.client;
 
 import java.net.URI;
 
-import org.eclipse.paho.client.mqttv3.IMqttAsyncClient;
-import org.eclipse.paho.client.mqttv3.IMqttClient;
-import org.eclipse.paho.client.mqttv3.MqttClientPersistence;
+import br.com.anteros.client.mqttv3.IMqttAsyncClient;
+import br.com.anteros.client.mqttv3.IMqttClient;
+import br.com.anteros.client.mqttv3.MqttClientPersistence;
 
 
 /**

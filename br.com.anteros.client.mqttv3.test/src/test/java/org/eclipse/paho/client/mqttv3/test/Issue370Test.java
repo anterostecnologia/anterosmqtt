@@ -13,10 +13,10 @@
  * Contributors:
  *     Red Hat Inc - initial API and implementation
  *******************************************************************************/
-package org.eclipse.paho.client.mqttv3.test;
+package br.com.anteros.client.mqttv3.test;
 
-import org.eclipse.paho.client.mqttv3.MqttAsyncClient;
-import org.eclipse.paho.client.mqttv3.MqttException;
+import br.com.anteros.client.mqttv3.MqttAsyncClient;
+import br.com.anteros.client.mqttv3.MqttException;
 import org.junit.Test;
 
 /**

@@ -1,10 +1,10 @@
-package org.eclipse.paho.mqttv5.client.internal;
+package br.com.anteros.mqttv5.client.internal;
 
 import java.net.URI;
 import java.net.URISyntaxException;
 
-import org.eclipse.paho.mqttv5.client.MqttConnectionOptions;
-import org.eclipse.paho.mqttv5.common.MqttException;
+import br.com.anteros.mqttv5.client.MqttConnectionOptions;
+import br.com.anteros.mqttv5.common.MqttException;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

@@ -1,5 +1,5 @@
 # build in NetworkModules
-org.eclipse.paho.mqttv5.client.internal.TCPNetworkModuleFactory
-org.eclipse.paho.mqttv5.client.internal.SSLNetworkModuleFactory
-org.eclipse.paho.mqttv5.client.websocket.WebSocketNetworkModuleFactory
-org.eclipse.paho.mqttv5.client.websocket.WebSocketSecureNetworkModuleFactory
+br.com.anteros.mqttv5.client.internal.TCPNetworkModuleFactory
+br.com.anteros.mqttv5.client.internal.SSLNetworkModuleFactory
+br.com.anteros.mqttv5.client.websocket.WebSocketNetworkModuleFactory
+br.com.anteros.mqttv5.client.websocket.WebSocketSecureNetworkModuleFactory

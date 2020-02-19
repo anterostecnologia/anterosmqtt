@@ -1,15 +1,15 @@
-package org.eclipse.paho.mqttv5.client.test;
+package br.com.anteros.mqttv5.client.test;
 
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.logging.Logger;
 
-import org.eclipse.paho.mqttv5.client.IMqttToken;
-import org.eclipse.paho.mqttv5.client.MqttAsyncClient;
-import org.eclipse.paho.mqttv5.client.test.properties.TestProperties;
-import org.eclipse.paho.mqttv5.client.test.utilities.TestMemoryPersistence;
-import org.eclipse.paho.mqttv5.common.MqttException;
-import org.eclipse.paho.mqttv5.common.packet.MqttProperties;
+import br.com.anteros.mqttv5.client.IMqttToken;
+import br.com.anteros.mqttv5.client.MqttAsyncClient;
+import br.com.anteros.mqttv5.client.test.properties.TestProperties;
+import br.com.anteros.mqttv5.client.test.utilities.TestMemoryPersistence;
+import br.com.anteros.mqttv5.common.MqttException;
+import br.com.anteros.mqttv5.common.packet.MqttProperties;
 import org.junit.Assert;
 import org.junit.Test;
 

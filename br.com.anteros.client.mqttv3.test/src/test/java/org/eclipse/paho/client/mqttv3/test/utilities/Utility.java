@@ -11,16 +11,16 @@
  *
  *******************************************************************************/
 
-package org.eclipse.paho.client.mqttv3.test.utilities;
+package br.com.anteros.client.mqttv3.test.utilities;
 
 import java.io.IOException;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 
-import org.eclipse.paho.client.mqttv3.IMqttAsyncClient;
-import org.eclipse.paho.client.mqttv3.IMqttClient;
-import org.eclipse.paho.client.mqttv3.IMqttToken;
-import org.eclipse.paho.client.mqttv3.MqttException;
+import br.com.anteros.client.mqttv3.IMqttAsyncClient;
+import br.com.anteros.client.mqttv3.IMqttClient;
+import br.com.anteros.client.mqttv3.IMqttToken;
+import br.com.anteros.client.mqttv3.MqttException;
 
 /**
  * General purpose test utilities  
@@ -85,7 +85,7 @@ public class Utility {
 
   /** 
    * Used to turn trace on dynamically in a test case, eg.
-   * java.util.logging.Logger logger = Logger.getLogger("org.eclipse.paho.client.mqttv3");
+   * java.util.logging.Logger logger = Logger.getLogger("br.com.anteros.client.mqttv3");
    * logger.addHandler(Utility.getHandler());
    * logger.setLevel(Level.ALL);
    */
@@ -95,7 +95,7 @@ public class Utility {
     try {
       if (handler == null) {
         handler = new FileHandler("framework.log", true);
-        handler.setFormatter(new org.eclipse.paho.client.mqttv3.test.logging.HumanFormatter());
+        handler.setFormatter(new br.com.anteros.client.mqttv3.test.logging.HumanFormatter());
       }
     }
     catch (IOException exception) {

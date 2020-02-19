@@ -14,25 +14,25 @@
  *    Patrick Leong - export Ian Craggs's Python client_test.py to Java. 
  *******************************************************************************/
 
-package org.eclipse.paho.client.mqttv3.test;
+package br.com.anteros.client.mqttv3.test;
 
 import java.net.URI;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.eclipse.paho.client.mqttv3.IMqttClient;
-import org.eclipse.paho.client.mqttv3.MqttClient;
-import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
-import org.eclipse.paho.client.mqttv3.MqttException;
-import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
-import org.eclipse.paho.client.mqttv3.test.client.MqttClientFactoryPaho;
-import org.eclipse.paho.client.mqttv3.test.client.MqttClientPaho;
-import org.eclipse.paho.client.mqttv3.test.logging.LoggingUtilities;
-import org.eclipse.paho.client.mqttv3.test.properties.TestProperties;
-import org.eclipse.paho.client.mqttv3.test.utilities.MqttV3Receiver;
-import org.eclipse.paho.client.mqttv3.test.utilities.MqttV3Receiver.ReceivedMessage;
-import org.eclipse.paho.client.mqttv3.test.utilities.Utility;
+import br.com.anteros.client.mqttv3.IMqttClient;
+import br.com.anteros.client.mqttv3.MqttClient;
+import br.com.anteros.client.mqttv3.MqttConnectOptions;
+import br.com.anteros.client.mqttv3.MqttException;
+import br.com.anteros.client.mqttv3.persist.MemoryPersistence;
+import br.com.anteros.client.mqttv3.test.client.MqttClientFactoryPaho;
+import br.com.anteros.client.mqttv3.test.client.MqttClientPaho;
+import br.com.anteros.client.mqttv3.test.logging.LoggingUtilities;
+import br.com.anteros.client.mqttv3.test.properties.TestProperties;
+import br.com.anteros.client.mqttv3.test.utilities.MqttV3Receiver;
+import br.com.anteros.client.mqttv3.test.utilities.MqttV3Receiver.ReceivedMessage;
+import br.com.anteros.client.mqttv3.test.utilities.Utility;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Assert;

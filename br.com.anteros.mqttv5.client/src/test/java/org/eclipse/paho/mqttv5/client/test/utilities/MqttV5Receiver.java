@@ -12,7 +12,7 @@
  *
  *******************************************************************************/
 
-package org.eclipse.paho.mqttv5.client.test.utilities;
+package br.com.anteros.mqttv5.client.test.utilities;
 
 import java.io.PrintStream;
 import java.util.ArrayList;
@@ -20,12 +20,12 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Logger;
 
-import org.eclipse.paho.mqttv5.client.IMqttDeliveryToken;
-import org.eclipse.paho.mqttv5.client.MqttCallback;
-import org.eclipse.paho.mqttv5.client.MqttDisconnectResponse;
-import org.eclipse.paho.mqttv5.common.MqttException;
-import org.eclipse.paho.mqttv5.common.MqttMessage;
-import org.eclipse.paho.mqttv5.common.packet.MqttProperties;
+import br.com.anteros.mqttv5.client.IMqttDeliveryToken;
+import br.com.anteros.mqttv5.client.MqttCallback;
+import br.com.anteros.mqttv5.client.MqttDisconnectResponse;
+import br.com.anteros.mqttv5.common.MqttException;
+import br.com.anteros.mqttv5.common.MqttMessage;
+import br.com.anteros.mqttv5.common.packet.MqttProperties;
 
 /**
  * Listen for in bound messages and connection loss.

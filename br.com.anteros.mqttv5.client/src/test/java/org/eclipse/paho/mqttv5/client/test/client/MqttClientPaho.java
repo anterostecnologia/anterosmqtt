@@ -12,12 +12,12 @@
  *
  *******************************************************************************/
 
-package org.eclipse.paho.mqttv5.client.test.client;
+package br.com.anteros.mqttv5.client.test.client;
 
-import org.eclipse.paho.mqttv5.client.MqttClientPersistence;
-import org.eclipse.paho.mqttv5.client.MqttClient;
-import org.eclipse.paho.mqttv5.client.persist.MemoryPersistence;
-import org.eclipse.paho.mqttv5.common.MqttException;
+import br.com.anteros.mqttv5.client.MqttClientPersistence;
+import br.com.anteros.mqttv5.client.MqttClient;
+import br.com.anteros.mqttv5.client.persist.MemoryPersistence;
+import br.com.anteros.mqttv5.common.MqttException;
 
 
 /**

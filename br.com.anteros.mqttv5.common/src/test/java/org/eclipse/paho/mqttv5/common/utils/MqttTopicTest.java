@@ -11,9 +11,9 @@
  *
  *******************************************************************************/
 
-package org.eclipse.paho.mqttv5.common.utils;
+package br.com.anteros.mqttv5.common.utils;
 
-import org.eclipse.paho.mqttv5.common.util.MqttTopicValidator;
+import br.com.anteros.mqttv5.common.util.MqttTopicValidator;
 import org.junit.Assert;
 import org.junit.Test;
 

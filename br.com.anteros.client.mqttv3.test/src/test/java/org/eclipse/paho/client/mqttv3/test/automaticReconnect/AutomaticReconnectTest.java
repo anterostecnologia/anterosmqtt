@@ -12,21 +12,21 @@
  *
  *******************************************************************************/
 
-package org.eclipse.paho.client.mqttv3.test.automaticReconnect;
+package br.com.anteros.client.mqttv3.test.automaticReconnect;
 
 import java.net.URI;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.eclipse.paho.client.mqttv3.MqttClient;
-import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
-import org.eclipse.paho.client.mqttv3.MqttException;
-import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
-import org.eclipse.paho.client.mqttv3.test.logging.LoggingUtilities;
-import org.eclipse.paho.client.mqttv3.test.properties.TestProperties;
-import org.eclipse.paho.client.mqttv3.test.utilities.ConnectionManipulationProxyServer;
-import org.eclipse.paho.client.mqttv3.test.utilities.Utility;
+import br.com.anteros.client.mqttv3.MqttClient;
+import br.com.anteros.client.mqttv3.MqttConnectOptions;
+import br.com.anteros.client.mqttv3.MqttException;
+import br.com.anteros.client.mqttv3.persist.MemoryPersistence;
+import br.com.anteros.client.mqttv3.test.logging.LoggingUtilities;
+import br.com.anteros.client.mqttv3.test.properties.TestProperties;
+import br.com.anteros.client.mqttv3.test.utilities.ConnectionManipulationProxyServer;
+import br.com.anteros.client.mqttv3.test.utilities.Utility;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.AfterClass;

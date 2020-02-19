@@ -17,7 +17,7 @@
  *    James Sutton - checkForActivity Token (bug 473928)
  *    James Sutton - Automatic Reconnect & Offline Buffering.
  */
-package org.eclipse.paho.client.mqttv3.internal;
+package br.com.anteros.client.mqttv3.internal;
 
 import java.util.Enumeration;
 import java.util.Properties;
@@ -25,29 +25,29 @@ import java.util.Vector;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeUnit;
 
-import org.eclipse.paho.client.mqttv3.BufferedMessage;
-import org.eclipse.paho.client.mqttv3.IMqttActionListener;
-import org.eclipse.paho.client.mqttv3.IMqttAsyncClient;
-import org.eclipse.paho.client.mqttv3.IMqttMessageListener;
-import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
-import org.eclipse.paho.client.mqttv3.MqttCallback;
-import org.eclipse.paho.client.mqttv3.MqttCallbackExtended;
-import org.eclipse.paho.client.mqttv3.MqttClientPersistence;
-import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
-import org.eclipse.paho.client.mqttv3.MqttDeliveryToken;
-import org.eclipse.paho.client.mqttv3.MqttException;
-import org.eclipse.paho.client.mqttv3.MqttMessage;
-import org.eclipse.paho.client.mqttv3.MqttPersistenceException;
-import org.eclipse.paho.client.mqttv3.MqttPingSender;
-import org.eclipse.paho.client.mqttv3.MqttToken;
-import org.eclipse.paho.client.mqttv3.MqttTopic;
-import org.eclipse.paho.client.mqttv3.internal.wire.MqttConnack;
-import org.eclipse.paho.client.mqttv3.internal.wire.MqttConnect;
-import org.eclipse.paho.client.mqttv3.internal.wire.MqttDisconnect;
-import org.eclipse.paho.client.mqttv3.internal.wire.MqttPublish;
-import org.eclipse.paho.client.mqttv3.internal.wire.MqttWireMessage;
-import org.eclipse.paho.client.mqttv3.logging.Logger;
-import org.eclipse.paho.client.mqttv3.logging.LoggerFactory;
+import br.com.anteros.client.mqttv3.BufferedMessage;
+import br.com.anteros.client.mqttv3.IMqttActionListener;
+import br.com.anteros.client.mqttv3.IMqttAsyncClient;
+import br.com.anteros.client.mqttv3.IMqttMessageListener;
+import br.com.anteros.client.mqttv3.IMqttDeliveryToken;
+import br.com.anteros.client.mqttv3.MqttCallback;
+import br.com.anteros.client.mqttv3.MqttCallbackExtended;
+import br.com.anteros.client.mqttv3.MqttClientPersistence;
+import br.com.anteros.client.mqttv3.MqttConnectOptions;
+import br.com.anteros.client.mqttv3.MqttDeliveryToken;
+import br.com.anteros.client.mqttv3.MqttException;
+import br.com.anteros.client.mqttv3.MqttMessage;
+import br.com.anteros.client.mqttv3.MqttPersistenceException;
+import br.com.anteros.client.mqttv3.MqttPingSender;
+import br.com.anteros.client.mqttv3.MqttToken;
+import br.com.anteros.client.mqttv3.MqttTopic;
+import br.com.anteros.client.mqttv3.internal.wire.MqttConnack;
+import br.com.anteros.client.mqttv3.internal.wire.MqttConnect;
+import br.com.anteros.client.mqttv3.internal.wire.MqttDisconnect;
+import br.com.anteros.client.mqttv3.internal.wire.MqttPublish;
+import br.com.anteros.client.mqttv3.internal.wire.MqttWireMessage;
+import br.com.anteros.client.mqttv3.logging.Logger;
+import br.com.anteros.client.mqttv3.logging.LoggerFactory;
 
 /**
  * Handles client communications with the server.  Sends and receives MQTT V3

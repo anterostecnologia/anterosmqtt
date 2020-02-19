@@ -1,4 +1,4 @@
-<project name="org.eclipse.paho.sample.utility" default="full">
+<project name="br.com.anteros.sample.utility" default="full">
 
 	<description>Builds a redistributable JAR and documentation for the Paho Java client.</description>
 
@@ -11,8 +11,8 @@
 	<property name="output.folder" value="./target/work" />
 	<property name="ship.folder" value="./target/ship" />
 
-	<property name="paho-utility-jar" value="org.eclipse.paho.sample.utility.jar" />
-	<property name="paho-client-jar" value="/home/icraggs/util/org.eclipse.paho.client.mqttv3.jar" />
+	<property name="paho-utility-jar" value="br.com.anteros.sample.utility.jar" />
+	<property name="paho-client-jar" value="/home/icraggs/util/br.com.anteros.client.mqttv3.jar" />
 	<property name="build.level" value="LYYMMDD" />
 
 	<!-- these should be moved to properties file if required -->
@@ -104,7 +104,7 @@
 				<exclude name="**/internal/**" />
 			</packageset>
 			<group title="Eclipse Paho MQTT v3.1 Client API" 
-				packages="org.eclipse.paho.client.mqttv3" />
+				packages="br.com.anteros.client.mqttv3" />
 		</javadoc>
 	</target>
 

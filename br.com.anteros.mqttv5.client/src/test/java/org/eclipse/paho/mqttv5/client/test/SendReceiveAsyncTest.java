@@ -12,24 +12,24 @@
  *
  *******************************************************************************/
 
-package org.eclipse.paho.mqttv5.client.test;
+package br.com.anteros.mqttv5.client.test;
 
 import java.net.URI;
 import java.util.UUID;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.eclipse.paho.mqttv5.client.IMqttAsyncClient;
-import org.eclipse.paho.mqttv5.client.IMqttDeliveryToken;
-import org.eclipse.paho.mqttv5.client.IMqttToken;
-import org.eclipse.paho.mqttv5.client.MqttConnectionOptions;
-import org.eclipse.paho.mqttv5.client.MqttClientException;
-import org.eclipse.paho.mqttv5.common.MqttException;
-import org.eclipse.paho.mqttv5.client.test.client.MqttClientFactoryPaho;
-import org.eclipse.paho.mqttv5.client.test.properties.TestProperties;
-import org.eclipse.paho.mqttv5.client.test.utilities.MqttV5Receiver;
-import org.eclipse.paho.mqttv5.client.test.utilities.Utility;
-import org.eclipse.paho.mqttv5.client.test.logging.LoggingUtilities;
+import br.com.anteros.mqttv5.client.IMqttAsyncClient;
+import br.com.anteros.mqttv5.client.IMqttDeliveryToken;
+import br.com.anteros.mqttv5.client.IMqttToken;
+import br.com.anteros.mqttv5.client.MqttConnectionOptions;
+import br.com.anteros.mqttv5.client.MqttClientException;
+import br.com.anteros.mqttv5.common.MqttException;
+import br.com.anteros.mqttv5.client.test.client.MqttClientFactoryPaho;
+import br.com.anteros.mqttv5.client.test.properties.TestProperties;
+import br.com.anteros.mqttv5.client.test.utilities.MqttV5Receiver;
+import br.com.anteros.mqttv5.client.test.utilities.Utility;
+import br.com.anteros.mqttv5.client.test.logging.LoggingUtilities;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
@@ -528,12 +528,12 @@ public class SendReceiveAsyncTest {
    * the broker.
    * 
    * In order to recreate the issue increase the value of waitMilliseconds in
-   * org.eclipse.paho.client.mqttv3.test.utilities.MqttV3Receiver.validateReceipt to some large value (e.g.
+   * br.com.anteros.client.mqttv3.test.utilities.MqttV3Receiver.validateReceipt to some large value (e.g.
    * 60*60*1000). This allows the test to wait for a longer time.
    * 
    * The issue occurs because while receiving such a large payload no PING is sent by the client to the broker. This
    * can be seen adding some debug statements in:
-   * org.eclipse.paho.client.mqttv3.internal.ClientState.checkForActivity.
+   * br.com.anteros.client.mqttv3.internal.ClientState.checkForActivity.
    * 
    * Since no other activity (messages from the client to the broker) is generated, the broker disconnects the client.
    */

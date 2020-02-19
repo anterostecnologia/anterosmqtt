@@ -1,10 +1,10 @@
-package org.eclipse.paho.client.mqttv3.test;
+package br.com.anteros.client.mqttv3.test;
 
-import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
+import br.com.anteros.client.mqttv3.MqttConnectOptions;
 
-import static org.eclipse.paho.client.mqttv3.MqttConnectOptions.MQTT_VERSION_3_1;
-import static org.eclipse.paho.client.mqttv3.MqttConnectOptions.MQTT_VERSION_3_1_1;
-import static org.eclipse.paho.client.mqttv3.MqttConnectOptions.MQTT_VERSION_DEFAULT;
+import static br.com.anteros.client.mqttv3.MqttConnectOptions.MQTT_VERSION_3_1;
+import static br.com.anteros.client.mqttv3.MqttConnectOptions.MQTT_VERSION_3_1_1;
+import static br.com.anteros.client.mqttv3.MqttConnectOptions.MQTT_VERSION_DEFAULT;
 import static org.junit.Assert.*;
 import org.junit.Test;
 

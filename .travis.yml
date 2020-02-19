@@ -20,8 +20,8 @@ before_install:
 
 script:
   - mvn -B clean -q
-  - mvn -B --projects org.eclipse.paho.client.mqttv3,org.eclipse.paho.client.mqttv3.test test -q
-# - mvn -B --projects org.eclipse.paho.mqttv5.common,org.eclipse.paho.mqttv5.client,org.eclipse.paho.mqttv5.client.test test -q
+  - mvn -B --projects br.com.anteros.client.mqttv3,br.com.anteros.client.mqttv3.test test -q
+# - mvn -B --projects br.com.anteros.mqttv5.common,br.com.anteros.mqttv5.client,br.com.anteros.mqttv5.client.test test -q
 
 #addons:
 #  apt:

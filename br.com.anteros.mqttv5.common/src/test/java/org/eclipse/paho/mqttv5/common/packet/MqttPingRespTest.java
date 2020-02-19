@@ -14,14 +14,14 @@
  * 	  Dave Locke   - Original MQTTv3 implementation
  *    James Sutton - Initial MQTTv5 implementation
  */
-package org.eclipse.paho.mqttv5.common.packet;
+package br.com.anteros.mqttv5.common.packet;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
-import org.eclipse.paho.mqttv5.common.MqttException;
-import org.eclipse.paho.mqttv5.common.packet.MqttPingResp;
-import org.eclipse.paho.mqttv5.common.packet.MqttWireMessage;
+import br.com.anteros.mqttv5.common.MqttException;
+import br.com.anteros.mqttv5.common.packet.MqttPingResp;
+import br.com.anteros.mqttv5.common.packet.MqttWireMessage;
 import org.junit.Test;
 
 public class MqttPingRespTest {

@@ -12,7 +12,7 @@
  *
  *******************************************************************************/
 
-package org.eclipse.paho.client.mqttv3.test.utilities;
+package br.com.anteros.client.mqttv3.test.utilities;
 
 import java.io.PrintStream;
 import java.util.ArrayList;
@@ -21,12 +21,12 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
-import org.eclipse.paho.client.mqttv3.IMqttAsyncClient;
-import org.eclipse.paho.client.mqttv3.IMqttClient;
-import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
-import org.eclipse.paho.client.mqttv3.MqttCallback;
-import org.eclipse.paho.client.mqttv3.MqttException;
-import org.eclipse.paho.client.mqttv3.MqttMessage;
+import br.com.anteros.client.mqttv3.IMqttAsyncClient;
+import br.com.anteros.client.mqttv3.IMqttClient;
+import br.com.anteros.client.mqttv3.IMqttDeliveryToken;
+import br.com.anteros.client.mqttv3.MqttCallback;
+import br.com.anteros.client.mqttv3.MqttException;
+import br.com.anteros.client.mqttv3.MqttMessage;
 
 /**
  * Listen for in bound messages and connection loss.

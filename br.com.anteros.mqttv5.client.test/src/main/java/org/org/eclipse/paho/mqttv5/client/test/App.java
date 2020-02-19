@@ -1,4 +1,4 @@
-package org.org.eclipse.paho.mqttv5.client.test;
+package org.br.com.anteros.mqttv5.client.test;
 
 /**
  * Hello world!

@@ -11,7 +11,7 @@ tmp/**/*
 local.properties
 .loadpath
 *.log
-org.eclipse.paho.client.mqttv3.test/TakeOverClient-*
+br.com.anteros.client.mqttv3.test/TakeOverClient-*
 
 # External tool builders
 .externalToolBuilders/

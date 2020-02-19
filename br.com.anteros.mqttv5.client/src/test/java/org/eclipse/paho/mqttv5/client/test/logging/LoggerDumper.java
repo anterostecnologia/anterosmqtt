@@ -12,7 +12,7 @@
  *
  *******************************************************************************/
 
-package org.eclipse.paho.mqttv5.client.test.logging;
+package br.com.anteros.mqttv5.client.test.logging;
 
 import java.util.Enumeration;
 import java.util.Iterator;
@@ -21,7 +21,7 @@ import java.util.logging.Handler;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
-import org.eclipse.paho.mqttv5.client.test.utilities.StringUtilities;
+import br.com.anteros.mqttv5.client.test.utilities.StringUtilities;
 
 /**
  * Utility class which dumps the formatters and handlers under a log manager

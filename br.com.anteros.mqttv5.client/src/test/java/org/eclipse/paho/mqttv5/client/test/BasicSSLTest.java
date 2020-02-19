@@ -11,7 +11,7 @@
  *
  *******************************************************************************/
 
-package org.eclipse.paho.mqttv5.client.test;
+package br.com.anteros.mqttv5.client.test;
 
 import java.io.File;
 import java.net.URI;
@@ -19,13 +19,13 @@ import java.util.UUID;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.eclipse.paho.mqttv5.client.IMqttClient;
-import org.eclipse.paho.mqttv5.client.MqttClient;
-import org.eclipse.paho.mqttv5.client.MqttTopic;
-import org.eclipse.paho.mqttv5.client.test.logging.LoggingUtilities;
-import org.eclipse.paho.mqttv5.client.test.properties.TestProperties;
-import org.eclipse.paho.mqttv5.client.test.utilities.MqttV5Receiver;
-import org.eclipse.paho.mqttv5.client.test.utilities.Utility;
+import br.com.anteros.mqttv5.client.IMqttClient;
+import br.com.anteros.mqttv5.client.MqttClient;
+import br.com.anteros.mqttv5.client.MqttTopic;
+import br.com.anteros.mqttv5.client.test.logging.LoggingUtilities;
+import br.com.anteros.mqttv5.client.test.properties.TestProperties;
+import br.com.anteros.mqttv5.client.test.utilities.MqttV5Receiver;
+import br.com.anteros.mqttv5.client.test.utilities.Utility;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;

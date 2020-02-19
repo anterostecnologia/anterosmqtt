@@ -13,7 +13,7 @@
  * Contributors:
  *    Dave Locke - initial API and implementation and/or initial documentation
  */
-package org.eclipse.paho.client.mqttv3.internal.logBuilder;
+package br.com.anteros.client.mqttv3.internal.logBuilder;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -41,7 +41,7 @@ public class LogMessageExtractor {
 			usageAndExit();
 		}
 		// Set defaults by assuming this is run from an eclipse workspace with paho projects loaded
-		String dir = "../org.eclipse.paho.client.mqttv3/src";
+		String dir = "../br.com.anteros.client.mqttv3/src";
 		String file = dir+"/org/eclipse/paho/client/mqttv3/internal/nls/logcat.properties";
 				
 		for (int i=0;i<args.length; i+=2) {
@@ -65,7 +65,7 @@ public class LogMessageExtractor {
 	}
 	
 	private static void usageAndExit() {
-		System.out.println("usage:\n org.eclipse.paho.client.mqttv3.internal.trace.TracePointExtractor [-d baseDir] [-o outputFile]");
+		System.out.println("usage:\n br.com.anteros.client.mqttv3.internal.trace.TracePointExtractor [-d baseDir] [-o outputFile]");
 		System.out.println("  -d baseDir        the source base directory [.]");
 		System.out.println("  -o outputFile     the output file.          [./trace.properties]");
 		System.exit(1);
