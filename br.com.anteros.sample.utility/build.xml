@@ -50,10 +50,10 @@
 			<fileset dir="${source.folder}/src" />
 		</copy>
 
-		<replace file="${output.folder}/src/main/java/org/eclipse/paho/sample/utility/MQTTFrame.java"
+		<replace file="${output.folder}/src/main/java/br/com/anteros/sample/utility/MQTTFrame.java"
 			token="@@BUILDLEVEL@@"
 			value="${build.level}"/>
-		<replace file="${output.folder}/src/main/java/org/eclipse/paho/sample/utility/MQTTFrame.java"
+		<replace file="${output.folder}/src/main/java/br/com/anteros/sample/utility/MQTTFrame.java"
 			token="@@VERSION@@"
 			value="${client.release.version}"/>
 
@@ -100,7 +100,7 @@
 				<pathelement location="${output.folder}/bin" />
 			</classpath>
 			<packageset dir="${output.folder}/src/">
-				<include name="org/eclipse/paho/client/mqttv3/**" />
+				<include name="br/com/anteros/client/mqttv3/**" />
 				<exclude name="**/internal/**" />
 			</packageset>
 			<group title="Eclipse Paho MQTT v3.1 Client API" 

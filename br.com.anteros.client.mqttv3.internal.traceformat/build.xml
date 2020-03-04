@@ -68,7 +68,7 @@
 			<classpath refid="classpath" />
 		</javac>
 
-		<delete file="${output.folder}/bin/org/eclipse/paho/client/mqttv3/internal/trace/TracePointExtractor.class" />
+		<delete file="${output.folder}/bin/br/com/anteros/client/mqttv3/internal/trace/TracePointExtractor.class" />
 		<mkdir dir="${output.folder}/bin/META-INF" />
 
 		<antcall target="updateManifest">

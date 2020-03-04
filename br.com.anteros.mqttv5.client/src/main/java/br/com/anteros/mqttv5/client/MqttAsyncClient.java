@@ -1693,8 +1693,8 @@ public class MqttAsyncClient implements MqttClientInterface, IMqttAsyncClient {
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * br.com.anteros.mqttv5.client.IMqttAsyncClient#setBufferOpts(org.eclipse.
-	 * paho.mqttv5.client.DisconnectedBufferOptions)
+	 * br.com.anteros.mqttv5.client.IMqttAsyncClient#setBufferOpts(br.com.
+	 * anteros.mqttv5.client.DisconnectedBufferOptions)
 	 */
 	@Override
 	public void setBufferOpts(DisconnectedBufferOptions bufferOpts) {

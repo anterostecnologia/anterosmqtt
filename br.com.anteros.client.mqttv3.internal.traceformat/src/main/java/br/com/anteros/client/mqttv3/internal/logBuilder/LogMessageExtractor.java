@@ -42,7 +42,7 @@ public class LogMessageExtractor {
 		}
 		// Set defaults by assuming this is run from an eclipse workspace with paho projects loaded
 		String dir = "../br.com.anteros.client.mqttv3/src";
-		String file = dir+"/org/eclipse/paho/client/mqttv3/internal/nls/logcat.properties";
+		String file = dir+"/br/com/anteros/client/mqttv3/internal/nls/logcat.properties";
 				
 		for (int i=0;i<args.length; i+=2) {
 			if (args[i].equals("-d")) {

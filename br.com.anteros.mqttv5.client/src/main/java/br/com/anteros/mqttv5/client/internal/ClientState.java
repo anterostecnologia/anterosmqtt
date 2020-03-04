@@ -1393,8 +1393,8 @@ public class ClientState implements MqttState {
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * br.com.anteros.mqttv5.client.internal.MqttState#disconnected(org.eclipse.
-	 * paho.client.mqttv3.MqttException)
+	 * br.com.anteros.mqttv5.client.internal.MqttState#disconnected(br.com.
+	 * anteros.client.mqttv3.MqttException)
 	 */
 	@Override
 	public void disconnected(MqttException reason) {
