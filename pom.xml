@@ -176,11 +176,11 @@
 					<artifactId>tycho-document-bundle-plugin</artifactId>
 					<version>${tycho.version}</version>
 				</plugin>
-				<plugin>
+				<!-- <plugin>
 					<groupId>org.eclipse.cbi.maven.plugins</groupId>
 					<artifactId>eclipse-jarsigner-plugin</artifactId>
 					<version>1.1.5</version>
-				</plugin>
+				</plugin> -->
 				<plugin>
 					<groupId>org.eclipse.tycho.extras</groupId>
 					<artifactId>tycho-pack200a-plugin</artifactId>
@@ -217,8 +217,8 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-				<!-- Use the Nexus Staging plugin as a full replacement for the standard 
+			<!-- <plugin>
+				Use the Nexus Staging plugin as a full replacement for the standard 
 					Maven Deploy plugin. See https://github.com/sonatype/nexus-maven-plugins/tree/master/staging/maven-plugin 
 					why this makes sense :-) We can control whether we want to deploy to the 
 					Eclipse repo or Maven Central by a combination of the version being a SNAPHOT 
@@ -226,7 +226,7 @@
 					take advantage of the plugin's "deferred deploy" feature which makes sure 
 					that all artifacts of a multi-module project are deployed as a whole at the 
 					end of the build process instead of deploying each module's artifacts individually 
-					as part of building the module. -->
+					as part of building the module.
 				<groupId>org.sonatype.plugins</groupId>
 				<artifactId>nexus-staging-maven-plugin</artifactId>
 				<version>1.6.5</version>
@@ -236,74 +236,29 @@
 					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
 					<autoReleaseAfterClose>true</autoReleaseAfterClose>
 				</configuration>
-			</plugin>
+			</plugin> -->
 		</plugins>
 	</build>
 
 	<profiles>
-
-		<profile>
-			<id>eclipse-sign</id>
+<profile>
+			<id>maven-central</id>
 			<build>
 				<plugins>
 					<plugin>
-						<groupId>org.eclipse.tycho</groupId>
-						<artifactId>target-platform-configuration</artifactId>
+						<groupId>org.sonatype.plugins</groupId>
+						<artifactId>nexus-staging-maven-plugin</artifactId>
+						<version>1.6.3</version>
+						<extensions>true</extensions>
 						<configuration>
-							<includePackedArtifacts>true</includePackedArtifacts>
+							<serverId>nexus-releases</serverId>
+							<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+							<autoReleaseAfterClose>true</autoReleaseAfterClose>
 						</configuration>
 					</plugin>
 					<plugin>
-						<groupId>org.eclipse.tycho.extras</groupId>
-						<artifactId>tycho-pack200a-plugin</artifactId>
-						<executions>
-							<execution>
-								<id>pack200-normalize</id>
-								<goals>
-									<goal>normalize</goal>
-								</goals>
-								<phase>verify</phase>
-							</execution>
-						</executions>
-					</plugin>
-					<!-- <plugin> <groupId>org.eclipse.cbi.maven.plugins</groupId> <artifactId>eclipse-jarsigner-plugin</artifactId> 
-						<executions> <execution> <id>sign</id> <goals> <goal>sign</goal> </goals> 
-						<phase>verify</phase> </execution> </executions> </plugin> -->
-					<plugin>
-						<groupId>org.eclipse.tycho.extras</groupId>
-						<artifactId>tycho-pack200b-plugin</artifactId>
-						<executions>
-							<execution>
-								<id>pack200-pack</id>
-								<goals>
-									<goal>pack</goal>
-								</goals>
-								<phase>verify</phase>
-							</execution>
-						</executions>
-					</plugin>
-					<!-- <plugin> <groupId>org.eclipse.tycho</groupId> <artifactId>tycho-p2-plugin</artifactId> 
-						<executions> <execution> <id>p2-metadata</id> <goals> <goal>p2-metadata</goal> 
-						</goals> <phase>verify</phase> </execution> </executions> <configuration> 
-						<defaultP2Metadata>false</defaultP2Metadata> </configuration> </plugin> -->
-				</plugins>
-			</build>
-		</profile>
-		<profile>
-			<!-- this profile generates GPG signatures -->
-			<id>create_gpg_signature</id>
-			<activation>
-				<activeByDefault>false</activeByDefault>
-				<property>
-					<name>createGPGSignature</name>
-				</property>
-			</activation>
-			<build>
-				<plugins>
-					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-gpg-plugin</artifactId>
-						<version>1.6</version>
 						<executions>
 							<execution>
 								<id>sign-artifacts</id>
@@ -314,13 +269,18 @@
 							</execution>
 						</executions>
 					</plugin>
+					<plugin>
+						<groupId>org.sonatype.plugins</groupId>
+						<artifactId>nexus-staging-maven-plugin</artifactId>
+						<version>1.6.3</version>
+						<extensions>true</extensions>
+						<configuration>
+							<serverId>nexus-releases</serverId>
+							<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+							<autoReleaseAfterClose>true</autoReleaseAfterClose>
+						</configuration>
+					</plugin>
 				</plugins>
-			</build>
-		</profile>
-
-		<profile>
-			<id>bintray</id>
-			<build>
 				<pluginManagement>
 					<plugins>
 						<plugin>
@@ -366,23 +326,12 @@
 
 			<distributionManagement>
 				<repository>
-					<id>bintray-REPO-deploy</id>
-					<url>https://api.bintray.com/maven/${bintray.subject}/${bintray.repo}/${bintray.package}/;publish=1;override=1</url>
+					<id>nexus-releases</id>
+					<name>Nexus Release Repository</name>
+					<url>http://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 				</repository>
 			</distributionManagement>
-
-			<repositories>
-				<repository>
-					<id>bintray</id>
-					<url>http://dl.bintray.com/${bintray.subject}/${bintray.repo}</url>
-					<releases>
-						<enabled>true</enabled>
-					</releases>
-					<snapshots>
-						<enabled>false</enabled>
-					</snapshots>
-				</repository>
-			</repositories>
+			
 		</profile>
 
 	</profiles>
