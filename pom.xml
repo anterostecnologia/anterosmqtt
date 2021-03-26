@@ -6,7 +6,7 @@
 	<groupId>br.com.anteros</groupId>
 	<artifactId>java-parent</artifactId>
 	<packaging>pom</packaging>
-	<version>1.2.2</version>
+	<version>1.2.3</version>
 
 
 	<properties>
@@ -37,7 +37,7 @@
 		<name>Anteros Tecnologia</name>
 		<url>http://www.anteros.com.br</url>
 	</organization>
-	
+
 	<url>http://github.com/anterostecnologia</url>
 
 	<developers>
@@ -74,7 +74,31 @@
 		</repository>
 	</distributionManagement>
 
+	<repositories>
+		<repository>
+			<id>local-REPO</id>
+			<url>http://vps4657.publiccloud.com.br:8082/artifactory/libs-release-local</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
 	<pluginRepositories>
+		<pluginRepository>
+			<id>local-REPO</id>
+			<url>http://vps4657.publiccloud.com.br:8082/artifactory/libs-release-local</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+
 		<pluginRepository>
 			<id>cbi</id>
 			<url>https://repo.eclipse.org/content/repositories/cbi-releases/</url>
@@ -176,11 +200,8 @@
 					<artifactId>tycho-document-bundle-plugin</artifactId>
 					<version>${tycho.version}</version>
 				</plugin>
-				<!-- <plugin>
-					<groupId>org.eclipse.cbi.maven.plugins</groupId>
-					<artifactId>eclipse-jarsigner-plugin</artifactId>
-					<version>1.1.5</version>
-				</plugin> -->
+				<!-- <plugin> <groupId>org.eclipse.cbi.maven.plugins</groupId> <artifactId>eclipse-jarsigner-plugin</artifactId> 
+					<version>1.1.5</version> </plugin> -->
 				<plugin>
 					<groupId>org.eclipse.tycho.extras</groupId>
 					<artifactId>tycho-pack200a-plugin</artifactId>
@@ -217,31 +238,23 @@
 					</execution>
 				</executions>
 			</plugin>
-			<!-- <plugin>
-				Use the Nexus Staging plugin as a full replacement for the standard 
-					Maven Deploy plugin. See https://github.com/sonatype/nexus-maven-plugins/tree/master/staging/maven-plugin 
-					why this makes sense :-) We can control whether we want to deploy to the 
-					Eclipse repo or Maven Central by a combination of the version being a SNAPHOT 
-					or release version and property skipStaging=true/false. In any case we can 
-					take advantage of the plugin's "deferred deploy" feature which makes sure 
-					that all artifacts of a multi-module project are deployed as a whole at the 
-					end of the build process instead of deploying each module's artifacts individually 
-					as part of building the module.
-				<groupId>org.sonatype.plugins</groupId>
-				<artifactId>nexus-staging-maven-plugin</artifactId>
-				<version>1.6.5</version>
-				<extensions>true</extensions>
-				<configuration>
-					<serverId>nexus-releases</serverId>
-					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
-					<autoReleaseAfterClose>true</autoReleaseAfterClose>
-				</configuration>
-			</plugin> -->
+			<!-- <plugin> Use the Nexus Staging plugin as a full replacement for the 
+				standard Maven Deploy plugin. See https://github.com/sonatype/nexus-maven-plugins/tree/master/staging/maven-plugin 
+				why this makes sense :-) We can control whether we want to deploy to the 
+				Eclipse repo or Maven Central by a combination of the version being a SNAPHOT 
+				or release version and property skipStaging=true/false. In any case we can 
+				take advantage of the plugin's "deferred deploy" feature which makes sure 
+				that all artifacts of a multi-module project are deployed as a whole at the 
+				end of the build process instead of deploying each module's artifacts individually 
+				as part of building the module. <groupId>org.sonatype.plugins</groupId> <artifactId>nexus-staging-maven-plugin</artifactId> 
+				<version>1.6.5</version> <extensions>true</extensions> <configuration> <serverId>nexus-releases</serverId> 
+				<nexusUrl>https://oss.sonatype.org/</nexusUrl> <autoReleaseAfterClose>true</autoReleaseAfterClose> 
+				</configuration> </plugin> -->
 		</plugins>
 	</build>
 
 	<profiles>
-<profile>
+		<profile>
 			<id>maven-central</id>
 			<build>
 				<plugins>
@@ -331,7 +344,7 @@
 					<url>http://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 				</repository>
 			</distributionManagement>
-			
+
 		</profile>
 
 	</profiles>
